@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    margin: 148px 24px 85px 24px;
+    width: 327px;
+    height: 535px;
+}
+
+.headerimg {
+    width: 240px;
+    margin: auto;
+}
+
+.ilustration {
+    margin-top: -110px;
+}
+
+.backimg {
+    margin-top: -80px;
+}
+
+.headtext {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+    margin: 28px 0 21px;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 48px;
+
+}
+
+.question_title{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4B4C5F;
+}
+
+.question_title:hover {
+    color: #F47B56;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+
+.answer {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    margin-top: 13px;
+}
+
+.question_answer {
+    border-bottom:solid #E8E8EA 1px;
+    padding-bottom: 16px;
+}
+
+.answer {
+    display: none;
+}
+
+.active img {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+
+.active p {
+    font-weight: 700;
+}
+
+.question_answer.active div.answer {
+    display: block;
+}
+
+.headerimgdesk {
+    display: none;
+}
+
+
+@media (min-width: 1000px) {
+
+    .headerimg {
+        display: none;
+    }
+
+    .headerimgdesk {
+        display: block;
+        width: 50%;
+    }
+
+    .main {
+        width: 920px;
+        height: 509px;
+        display: flex;
+    }
+    
+    .deskback {
+        position: relative;
+        left: -570px;
+        top: -300px;
+    }
+
+    .ilustrationdesk {
+        position: relative;
+        top: -890px;
+        left: -80px;
+    }
+
+    .box {
+        position: relative;
+        left: -93px;
+        top: -1116px;
+    }
+
+    .hiden {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .info {
+        padding: 0 95px 83px 20px;
+    }
+
+    .headtext {
+        margin: 65px 0 15px 20px;
+        justify-content: start;
+    }
+
+    .question_answer {
+        padding-bottom: 18px;
+        width: 350px;
+    }
+
+    .question_title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+}
+
+
